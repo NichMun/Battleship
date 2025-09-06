@@ -1,18 +1,20 @@
-## Getting Started
+# Battleship Game
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Java implementation of the classic Battleship game.
 
-## Folder Structure
+## How to Play
 
-The workspace contains two folders by default, where:
+1. Start the game by placing ships. To place a ship, give a coordinate with a letter(A-J), \n followed by a number (0-9). Examples include, a0, d7, e9, h2, etc. The coordinate is the origin. \n You can then rotate the ship about this origin. The ships will be in sizes 2-6, in that order.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2. Ships cannot be placed next to each other. This means horizontal and vertical (not diagonal) adjacency is not allowed. \n For obvious reasons, placing ships on top of each other is not allowed either.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+3. You and your opponent will take turns guessing where each others ships are. You can't guess where you already have.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+4. If you land a hit, it will be indicated with a '!'. Landing a hit means you get to go again.
+
+
+5. You and your opponent keep playing either one of you ships are all fully sunken.
+
